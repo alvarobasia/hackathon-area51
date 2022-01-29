@@ -13,25 +13,39 @@
     },
     {
       "id": "2",
-      "selling_price": 259900,
-      "price": 281399,
+      "selling_price": 2599,
+      "price": 2813,
       "installment_id": "10",
       "installment": 10,
       "installment_rate": 0,
       "has_installment_rate": false,
-      "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
-      "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+      "description": "Tamanco Plataforma Couro Tan Laser",
+      "image_url": "https://usaflextatix.vteximg.com.br/arquivos/ids/371917-1000-1000/Tamanco_Plataforma_Couro_Tan_L_128.jpg?v=637753415345800000",
+      "skus": [
+        "34",
+        "35",
+        "36",
+        "37",
+        "38"
+      ]
     },
     {
       "id": "3",
-      "selling_price": 159900,
-      "price": 181399,
+      "selling_price": 15990,
+      "price": 18139,
       "installment_id": "6",
       "installment": 6,
       "installment_rate": 3,
       "has_installment_rate": true,
-      "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
-      "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+      "description": "MOLETOM PRETO - A INVOLUÇÃO",
+      "image_url": "https://d3ugyf2ht6aenh.cloudfront.net/stores/974/635/products/moletom-preto-a-involucao1-47f008f41880070e2616294073857394-1024-1024.png",
+      "skus": [
+        "PP",
+        "P",
+        "M",
+        "G",
+        "GG"
+      ]
     },
     {
       "id": "4",
@@ -41,19 +55,27 @@
       "installment": 12,
       "installment_rate": 6,
       "has_installment_rate": true,
-      "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
-      "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+      "description": "Notebook ASUS AMD Ryzen 5 3500U, 8GB, 256GB SSD, 15.6´ Full HD, Windows 10 Home, Cinza - M515DA-EJ502T",
+      "image_url": "https://images.kabum.com.br/produtos/fotos/149914/notebook-asus-amd-ryzen-5-3500u-8gb-256gb-ssd-15-6-windows-10-home-cinza-m515da-ej502t_1621425554_gg.jpg",
+      "skus": [
+        "500GB",
+        "1TB"
+      ]
     },
     {
       "id": "5",
-      "selling_price": 259900,
-      "price": 281399,
+      "selling_price": 259,
+      "price": 281,
       "installment_id": "10",
       "installment": 10,
       "installment_rate": 5,
       "has_installment_rate": true,
-      "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
-      "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+      "description": "Net Positive: How Courageous Companies Thrive by Giving More Than They Take",
+      "image_url": "https://images-na.ssl-images-amazon.com/images/I/41GXhpet+HL._SX335_BO1,204,203,200_.jpg",
+      "skus": [
+        "Capa Comum",
+        "Capa Dura"
+      ]
     },
     {
       "id": "6",
@@ -85,25 +107,39 @@
         },
         {
           "id": "2",
-          "selling_price": 259900,
-          "price": 281399,
+          "selling_price": 2599,
+          "price": 2813,
           "installment_id": "10",
           "installment": 10,
           "installment_rate": 0,
           "has_installment_rate": false,
-          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
-          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+          "description": "Tamanco Plataforma Couro Tan Laser",
+          "image_url": "https://usaflextatix.vteximg.com.br/arquivos/ids/371917-1000-1000/Tamanco_Plataforma_Couro_Tan_L_128.jpg?v=637753415345800000",
+          "skus": [
+            "34",
+            "35",
+            "36",
+            "37",
+            "38"
+          ]
         },
         {
           "id": "3",
-          "selling_price": 159900,
-          "price": 181399,
+          "selling_price": 15990,
+          "price": 18139,
           "installment_id": "6",
           "installment": 6,
           "installment_rate": 3,
           "has_installment_rate": true,
-          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
-          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+          "description": "MOLETOM PRETO - A INVOLUÇÃO",
+          "image_url": "https://d3ugyf2ht6aenh.cloudfront.net/stores/974/635/products/moletom-preto-a-involucao1-47f008f41880070e2616294073857394-1024-1024.png",
+          "skus": [
+            "PP",
+            "P",
+            "M",
+            "G",
+            "GG"
+          ]
         },
         {
           "id": "4",
@@ -113,19 +149,27 @@
           "installment": 12,
           "installment_rate": 6,
           "has_installment_rate": true,
-          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
-          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+          "description": "Notebook ASUS AMD Ryzen 5 3500U, 8GB, 256GB SSD, 15.6´ Full HD, Windows 10 Home, Cinza - M515DA-EJ502T",
+          "image_url": "https://images.kabum.com.br/produtos/fotos/149914/notebook-asus-amd-ryzen-5-3500u-8gb-256gb-ssd-15-6-windows-10-home-cinza-m515da-ej502t_1621425554_gg.jpg",
+          "skus": [
+            "500GB",
+            "1TB"
+          ]
         },
         {
           "id": "5",
-          "selling_price": 259900,
-          "price": 281399,
+          "selling_price": 259,
+          "price": 281,
           "installment_id": "10",
           "installment": 10,
           "installment_rate": 5,
           "has_installment_rate": true,
-          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
-          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+          "description": "Net Positive: How Courageous Companies Thrive by Giving More Than They Take",
+          "image_url": "https://images-na.ssl-images-amazon.com/images/I/41GXhpet+HL._SX335_BO1,204,203,200_.jpg",
+          "skus": [
+            "Capa Comum",
+            "Capa Dura"
+          ]
         },
         {
           "id": "6",
@@ -163,19 +207,30 @@
           "installment": 12,
           "installment_rate": 6,
           "has_installment_rate": true,
-          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
-          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+          "description": "Notebook ASUS AMD Ryzen 5 3500U, 8GB, 256GB SSD, 15.6´ Full HD, Windows 10 Home, Cinza - M515DA-EJ502T",
+          "image_url": "https://images.kabum.com.br/produtos/fotos/149914/notebook-asus-amd-ryzen-5-3500u-8gb-256gb-ssd-15-6-windows-10-home-cinza-m515da-ej502t_1621425554_gg.jpg",
+          "skus": [
+            "500GB",
+            "1TB"
+          ]
         },
         {
           "id": "5",
-          "selling_price": 259900,
-          "price": 281399,
+          "selling_price": 259,
+          "price": 281,
           "installment_id": "10",
           "installment": 10,
           "installment_rate": 5,
           "has_installment_rate": true,
-          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
-          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+          "description": "Net Positive: How Courageous Companies Thrive by Giving More Than They Take",
+          "image_url": "https://images-na.ssl-images-amazon.com/images/I/41GXhpet+HL._SX335_BO1,204,203,200_.jpg",
+          "skus": [
+            "34",
+            "35",
+            "36",
+            "37",
+            "38"
+          ]
         }
       ]
     },
@@ -196,25 +251,39 @@
         },
         {
           "id": "2",
-          "selling_price": 259900,
-          "price": 281399,
+          "selling_price": 2599,
+          "price": 2813,
           "installment_id": "10",
           "installment": 10,
           "installment_rate": 0,
           "has_installment_rate": false,
-          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
-          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+          "description": "Tamanco Plataforma Couro Tan Laser",
+          "image_url": "https://usaflextatix.vteximg.com.br/arquivos/ids/371917-1000-1000/Tamanco_Plataforma_Couro_Tan_L_128.jpg?v=637753415345800000",
+          "skus": [
+            "34",
+            "35",
+            "36",
+            "37",
+            "38"
+          ]
         },
         {
           "id": "3",
-          "selling_price": 159900,
-          "price": 181399,
+          "selling_price": 15990,
+          "price": 18139,
           "installment_id": "6",
           "installment": 6,
           "installment_rate": 3,
           "has_installment_rate": true,
-          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
-          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+          "description": "MOLETOM PRETO - A INVOLUÇÃO",
+          "image_url": "https://d3ugyf2ht6aenh.cloudfront.net/stores/974/635/products/moletom-preto-a-involucao1-47f008f41880070e2616294073857394-1024-1024.png",
+          "skus": [
+            "PP",
+            "P",
+            "M",
+            "G",
+            "GG"
+          ]
         },
         {
           "id": "4",
@@ -224,19 +293,27 @@
           "installment": 12,
           "installment_rate": 6,
           "has_installment_rate": true,
-          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
-          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+          "description": "Notebook ASUS AMD Ryzen 5 3500U, 8GB, 256GB SSD, 15.6´ Full HD, Windows 10 Home, Cinza - M515DA-EJ502T",
+          "image_url": "https://images.kabum.com.br/produtos/fotos/149914/notebook-asus-amd-ryzen-5-3500u-8gb-256gb-ssd-15-6-windows-10-home-cinza-m515da-ej502t_1621425554_gg.jpg",
+          "skus": [
+            "500GB",
+            "1TB"
+          ]
         },
         {
           "id": "5",
-          "selling_price": 259900,
-          "price": 281399,
+          "selling_price": 259,
+          "price": 281,
           "installment_id": "10",
           "installment": 10,
           "installment_rate": 5,
           "has_installment_rate": true,
-          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
-          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+          "description": "Net Positive: How Courageous Companies Thrive by Giving More Than They Take",
+          "image_url": "https://images-na.ssl-images-amazon.com/images/I/41GXhpet+HL._SX335_BO1,204,203,200_.jpg",
+          "skus": [
+            "Capa Comum",
+            "Capa Dura"
+          ]
         }
       ]
     }

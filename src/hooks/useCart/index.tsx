@@ -12,6 +12,8 @@ export * from './types';
 const CartContext = createContext<CartContextData>({} as CartContextData);
 
 const CartProvider: FC = ({ children }) => {
+  const [sku, setsku] = useState('');
+
   const [cart, setCart] = useState<CartData[]>(() => {
     const storagedCart = localStorage.getItem('@ShopyMania:cart');
 
@@ -26,16 +28,24 @@ const CartProvider: FC = ({ children }) => {
     localStorage.setItem('@ShopyMania:cart', JSON.stringify(cart));
   }, [cart]);
 
-  const addProduct = async (product_id: string) => {
+  const addProduct = async (product_id: string, _product_sku = '') => {
     try {
       const product = cart.find(prod => prod.id === product_id);
 
       const amount = product ? product.amount : 0;
 
-      updateProductAmount({
-        product_id,
-        amount: amount + 1,
-      });
+      if (_product_sku.length === 0) {
+        updateProductAmount({
+          product_id,
+          amount: amount + 1,
+        });
+      } else {
+        updateProductAmount({
+          product_id,
+          amount: amount + 1,
+          _product_sku,
+        });
+      }
     } catch {
       toast.error('Erro na adição do produto');
     }
@@ -54,6 +64,7 @@ const CartProvider: FC = ({ children }) => {
   const updateProductAmount = async ({
     product_id,
     amount,
+    _product_sku = '',
   }: UpdateProductAmount) => {
     try {
       if (amount <= 0) {
@@ -69,25 +80,47 @@ const CartProvider: FC = ({ children }) => {
           `/products/${product_id}`,
         );
 
-        const item = {
-          ...response.data,
-          amount: 1,
-        };
+        if (_product_sku.length === 0) {
+          const item = {
+            ...response.data,
+            amount: 1,
+          };
 
-        setCart([...cart, item]);
+          console.log(item);
+          setCart([...cart, item]);
+        } else {
+          const item = {
+            ...response.data,
+            amount: 1,
+            sku: _product_sku,
+          };
+          console.log(item);
+          setCart([...cart, item]);
+        }
 
         return;
       }
 
-      const products = cart.map(prod => {
-        if (prod.id === product_id) {
-          prod.amount = amount;
-        }
+      if (_product_sku.length === 0) {
+        const products = cart.map(prod => {
+          if (prod.id === product_id) {
+            prod.amount = amount;
+          }
 
-        return prod;
-      });
+          return prod;
+        });
+        setCart(products);
+      } else {
+        const products = cart.map(prod => {
+          if (prod.id === product_id) {
+            prod.amount = amount;
+          }
 
-      setCart(products);
+          prod.sku = _product_sku;
+          return prod;
+        });
+        setCart(products);
+      }
     } catch {
       toast.error('Erro na alteração de quantidade do produto');
     }
@@ -95,7 +128,12 @@ const CartProvider: FC = ({ children }) => {
 
   return (
     <CartContext.Provider
-      value={{ cart, addProduct, removeProduct, updateProductAmount }}
+      value={{
+        cart,
+        addProduct,
+        removeProduct,
+        updateProductAmount,
+      }}
     >
       {children}
     </CartContext.Provider>
