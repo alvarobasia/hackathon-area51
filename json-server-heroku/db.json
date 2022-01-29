@@ -1,0 +1,432 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "selling_price": 259900,
+      "price": 281399,
+      "installment_id": "10",
+      "installment": 10,
+      "installment_rate": 5,
+      "has_installment_rate": true,
+      "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+      "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+    },
+    {
+      "id": "2",
+      "selling_price": 259900,
+      "price": 281399,
+      "installment_id": "10",
+      "installment": 10,
+      "installment_rate": 0,
+      "has_installment_rate": false,
+      "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+      "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+    },
+    {
+      "id": "3",
+      "selling_price": 159900,
+      "price": 181399,
+      "installment_id": "6",
+      "installment": 6,
+      "installment_rate": 3,
+      "has_installment_rate": true,
+      "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+      "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+    },
+    {
+      "id": "4",
+      "selling_price": 229900,
+      "price": 231399,
+      "installment_id": "12",
+      "installment": 12,
+      "installment_rate": 6,
+      "has_installment_rate": true,
+      "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+      "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+    },
+    {
+      "id": "5",
+      "selling_price": 259900,
+      "price": 281399,
+      "installment_id": "10",
+      "installment": 10,
+      "installment_rate": 5,
+      "has_installment_rate": true,
+      "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+      "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+    },
+    {
+      "id": "6",
+      "selling_price": 259900,
+      "price": 281399,
+      "installment_id": "10",
+      "installment": 10,
+      "installment_rate": 5,
+      "has_installment_rate": true,
+      "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+      "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+    }
+  ],
+  "collections": [
+    {
+      "id": "1",
+      "name": "Lançamentos",
+      "products": [
+        {
+          "id": "1",
+          "selling_price": 259900,
+          "price": 281399,
+          "installment_id": "10",
+          "installment": 10,
+          "installment_rate": 5,
+          "has_installment_rate": true,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        },
+        {
+          "id": "2",
+          "selling_price": 259900,
+          "price": 281399,
+          "installment_id": "10",
+          "installment": 10,
+          "installment_rate": 0,
+          "has_installment_rate": false,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        },
+        {
+          "id": "3",
+          "selling_price": 159900,
+          "price": 181399,
+          "installment_id": "6",
+          "installment": 6,
+          "installment_rate": 3,
+          "has_installment_rate": true,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        },
+        {
+          "id": "4",
+          "selling_price": 229900,
+          "price": 231399,
+          "installment_id": "12",
+          "installment": 12,
+          "installment_rate": 6,
+          "has_installment_rate": true,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        },
+        {
+          "id": "5",
+          "selling_price": 259900,
+          "price": 281399,
+          "installment_id": "10",
+          "installment": 10,
+          "installment_rate": 5,
+          "has_installment_rate": true,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        },
+        {
+          "id": "6",
+          "selling_price": 259900,
+          "price": 281399,
+          "installment_id": "10",
+          "installment": 10,
+          "installment_rate": 5,
+          "has_installment_rate": true,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Mais vendidos",
+      "products": [
+        {
+          "id": "3",
+          "selling_price": 159900,
+          "price": 181399,
+          "installment_id": "6",
+          "installment": 6,
+          "installment_rate": 3,
+          "has_installment_rate": true,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        },
+        {
+          "id": "4",
+          "selling_price": 229900,
+          "price": 231399,
+          "installment_id": "12",
+          "installment": 12,
+          "installment_rate": 6,
+          "has_installment_rate": true,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        },
+        {
+          "id": "5",
+          "selling_price": 259900,
+          "price": 281399,
+          "installment_id": "10",
+          "installment": 10,
+          "installment_rate": 5,
+          "has_installment_rate": true,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Talvez você possa gostar",
+      "products": [
+        {
+          "id": "1",
+          "selling_price": 259900,
+          "price": 281399,
+          "installment_id": "10",
+          "installment": 10,
+          "installment_rate": 5,
+          "has_installment_rate": true,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        },
+        {
+          "id": "2",
+          "selling_price": 259900,
+          "price": 281399,
+          "installment_id": "10",
+          "installment": 10,
+          "installment_rate": 0,
+          "has_installment_rate": false,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        },
+        {
+          "id": "3",
+          "selling_price": 159900,
+          "price": 181399,
+          "installment_id": "6",
+          "installment": 6,
+          "installment_rate": 3,
+          "has_installment_rate": true,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        },
+        {
+          "id": "4",
+          "selling_price": 229900,
+          "price": 231399,
+          "installment_id": "12",
+          "installment": 12,
+          "installment_rate": 6,
+          "has_installment_rate": true,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        },
+        {
+          "id": "5",
+          "selling_price": 259900,
+          "price": 281399,
+          "installment_id": "10",
+          "installment": 10,
+          "installment_rate": 5,
+          "has_installment_rate": true,
+          "description": "Monitor LED 27\" Gamer Curvo Samsung LC27RG50FQLXZD 1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50",
+          "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1515753/7/1515753749_1GG.jpg"
+        }
+      ]
+    }
+  ],
+  "payments": [
+    {
+      "id": "1",
+      "name": "Credit card"
+    },
+    {
+      "id": "2",
+      "name": "Debit card"
+    },
+    {
+      "id": "3",
+      "name": "Boleto"
+    }
+  ],
+  "installments": [
+    {
+      "id": "1",
+      "payment_id": "1",
+      "installment": 1,
+      "installment_rate": 0.5
+    },
+    {
+      "id": "2",
+      "payment_id": "1",
+      "installment": 2,
+      "installment_rate": 1
+    },
+    {
+      "id": "3",
+      "payment_id": "1",
+      "installment": 3,
+      "installment_rate": 1.5
+    },
+    {
+      "id": "4",
+      "payment_id": "1",
+      "installment": 4,
+      "installment_rate": 2
+    },
+    {
+      "id": "5",
+      "payment_id": "1",
+      "installment": 5,
+      "installment_rate": 2.5
+    },
+    {
+      "id": "6",
+      "payment_id": "1",
+      "installment": 6,
+      "installment_rate": 3
+    },
+    {
+      "id": "7",
+      "payment_id": "1",
+      "installment": 7,
+      "installment_rate": 3.5
+    },
+    {
+      "id": "8",
+      "payment_id": "1",
+      "installment": 8,
+      "installment_rate": 4
+    },
+    {
+      "id": "9",
+      "payment_id": "1",
+      "installment": 9,
+      "installment_rate": 4.5
+    },
+    {
+      "id": "10",
+      "payment_id": "1",
+      "installment": 10,
+      "installment_rate": 5
+    },
+    {
+      "id": "11",
+      "payment_id": "1",
+      "installment": 11,
+      "installment_rate": 5.5
+    },
+    {
+      "id": "12",
+      "payment_id": "1",
+      "installment": 12,
+      "installment_rate": 6
+    },
+    {
+      "id": "13",
+      "payment_id": "2",
+      "installment": 1,
+      "installment_rate": 3.5
+    },
+    {
+      "id": "14",
+      "payment_id": "3",
+      "installment": 1,
+      "installment_rate": 0
+    }
+  ],
+  "wishlist": [
+    {
+      "id": "3",
+      "product_id": "3"
+    },
+    {
+      "id": "6",
+      "product_id": "6"
+    }
+  ],
+  "banners": [
+    {
+      "id": "1",
+      "image_url": "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
+      "name": "Nike Air Max"
+    },
+    {
+      "id": "2",
+      "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80",
+      "name": "Nike FREE"
+    },
+    {
+      "id": "3",
+      "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1412&q=80",
+      "name": "Daily Essentials"
+    },
+    {
+      "id": "4",
+      "image_url": "https://images.unsplash.com/photo-1511556820780-d912e42b4980?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "name": "Nick everyday"
+    },
+    {
+      "id": "5",
+      "image_url": "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=688&q=80",
+      "name": "curology product set with box"
+    },
+    {
+      "id": "6",
+      "image_url": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80",
+      "name": "Nick runner"
+    }
+  ],
+  "bannerCollection": [
+    {
+      "id": "1",
+      "type": "desktop",
+      "name": "Home page",
+      "banners": [
+        {
+          "id": "1",
+          "image_url": "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
+          "name": "Nike Air Max"
+        },
+        {
+          "id": "2",
+          "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80",
+          "name": "Nike FREE"
+        },
+        {
+          "id": "3",
+          "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1412&q=80",
+          "name": "Daily Essentials"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "type": "mobile",
+      "name": "Home page",
+      "banners": [
+        {
+          "id": "4",
+          "image_url": "https://images.unsplash.com/photo-1511556820780-d912e42b4980?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+          "name": "Nick everyday"
+        },
+        {
+          "id": "5",
+          "image_url": "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=688&q=80",
+          "name": "curology product set with box"
+        },
+        {
+          "id": "6",
+          "image_url": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80",
+          "name": "Nick runner"
+        }
+      ]
+    }
+  ]
+}
