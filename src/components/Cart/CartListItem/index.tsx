@@ -25,6 +25,7 @@ const CartListItem: FC = () => {
       totalFormatted: Price.format({
         price: product.selling_price * (product.amount ?? 1),
       }),
+      sku: product.sku || undefined,
     }));
   }, [cart]);
 
@@ -58,6 +59,7 @@ const CartListItem: FC = () => {
         <tr>
           <th aria-label="product image" />
           <th>PRODUTO</th>
+          <th>TIPO</th>
           <th>QTD</th>
           <th>SUBTOTAL</th>
           <th aria-label="delete icon" />
@@ -79,6 +81,8 @@ const CartListItem: FC = () => {
               <strong>{product.description}</strong>
               <span>{product.sellingPriceFormatted}</span>
             </td>
+
+            <td>{product.sku}</td>
 
             <td>
               <div>
