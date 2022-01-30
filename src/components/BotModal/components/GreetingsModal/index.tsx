@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useSpeechSynthesis } from 'react-speech-kit';
 import { useBotModal } from '../../../../hooks/useBotModal/useBotModal';
 import {
   AudioButtonContainer,
@@ -24,6 +25,8 @@ const GreetingsModal = () => {
   useEffect(() => {
     handleModalState(modalState);
   }, [modalState, handleModalState]);
+
+  const { speak } = useSpeechSynthesis();
 
   return (
     <ModalTextGreetings>
