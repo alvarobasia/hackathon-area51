@@ -5,6 +5,7 @@ import { ModalContainer, ModalImageContainer, ModalText } from './styles';
 
 import Assistent from '../../assets/Assistent.svg';
 import ChoicesModal from './components/ChoicesModal';
+import SearchModal from './components/SearchModal';
 
 const BotModal = () => {
   const { isModalOpen, handleModalState, modalState } = useBotModal();
@@ -32,7 +33,7 @@ const BotModal = () => {
       <ModalImageContainer>
         <img src={Assistent} alt="assistant bot" />
       </ModalImageContainer>
-      <ChoicesModal />
+      <SearchModal />
     </ModalContainer>
   );
 };
