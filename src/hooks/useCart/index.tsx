@@ -12,8 +12,6 @@ export * from './types';
 const CartContext = createContext<CartContextData>({} as CartContextData);
 
 const CartProvider: FC = ({ children }) => {
-  const [sku, setsku] = useState('');
-
   const [cart, setCart] = useState<CartData[]>(() => {
     const storagedCart = localStorage.getItem('@ShopyMania:cart');
 
