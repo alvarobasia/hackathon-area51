@@ -22,10 +22,17 @@ export const ProductImage = styled.div`
 
   width: 100%;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 200px;
+  overflow: hidden;
+
   margin-bottom: 2rem;
 
   img {
-    width: 100%;
+    height: 100%;
   }
 `;
 
@@ -35,6 +42,8 @@ export const ProductDescription = styled.p`
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.25rem;
+
+  height: 6rem;
 
   color: var(--gray-900);
 `;
@@ -133,4 +142,8 @@ export const ProductButtonAdded = styled(ProductButton)`
   &:active {
     background: var(--green-100);
   }
+`;
+
+export const SkuContainer = styled.div`
+  height: 2rem;
 `;

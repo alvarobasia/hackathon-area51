@@ -1,5 +1,6 @@
 import { useCallback, useMemo, useState } from 'react';
 import { FiCheck } from 'react-icons/fi';
+import { useHistory } from 'react-router-dom';
 
 import { useCart } from '../../../hooks/useCart';
 
@@ -15,12 +16,14 @@ import {
   ProductDescription,
   ProductImage,
   ProductPrice,
+  SkuContainer,
 } from './styles';
 
 import { ShelfProductFunctionType } from './types/ShelfProductFunctionType';
 
 const ShelfProduct: ShelfProductFunctionType = ({ productProps }) => {
   const [productAdded, setProductAdded] = useState(false);
+  const history = useHistory();
 
   const [skuSelected, setSkuSelected] = useState('');
 
@@ -44,7 +47,9 @@ const ShelfProduct: ShelfProductFunctionType = ({ productProps }) => {
   }, [addProduct, productProps.id, skuSelected]);
 
   return (
-    <ProductContainer>
+    <ProductContainer
+      onClick={() => history.push(`/product/${productProps.id}`)}
+    >
       <ProductImage>
         <img
           src={productProps.image_url}
@@ -57,14 +62,14 @@ const ShelfProduct: ShelfProductFunctionType = ({ productProps }) => {
 
       <ProductDescription>{productProps.description}</ProductDescription>
 
-      <>
+      <SkuContainer>
         {productProps.skus && (
           <SKUShelf
             skus={productProps.skus}
             onChange={e => setSkuSelected(e)}
           />
         )}
-      </>
+      </SkuContainer>
 
       <ProductPrice>
         {productProps.selling_price < productProps.price && (
@@ -101,7 +106,14 @@ const ShelfProduct: ShelfProductFunctionType = ({ productProps }) => {
           adicionado
         </ProductButtonAdded>
       ) : (
-        <ProductButton onClick={handleAddToCart}>Adicionar</ProductButton>
+        <ProductButton
+          onClick={e => {
+            e.stopPropagation();
+            handleAddToCart();
+          }}
+        >
+          Adicionar
+        </ProductButton>
       )}
     </ProductContainer>
   );
