@@ -32,7 +32,7 @@ const BotModal = () => {
       <ModalImageContainer>
         <img src={Assistent} alt="assistant bot" />
       </ModalImageContainer>
-      <ChoicesModal />
+      <GreetingsModal />
     </ModalContainer>
   );
 };

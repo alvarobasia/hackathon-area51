@@ -4,7 +4,7 @@ interface ModalContextData {
   isModalOpen: boolean;
   modalState: string;
   checkButton: (value: boolean) => void;
-  handleOpenLoginModal: () => void;
+  handleOpenLoginModal: (value: boolean) => void;
   showLoginModal: boolean;
   handleModalState: (value: string) => void;
 }
@@ -24,8 +24,8 @@ const ModalProvider: FC = ({ children }) => {
     setModalState(value);
   };
 
-  const handleOpenLoginModal = () => {
-    setShowLoginModal(true);
+  const handleOpenLoginModal = (value: boolean) => {
+    setShowLoginModal(value);
   };
 
   return (

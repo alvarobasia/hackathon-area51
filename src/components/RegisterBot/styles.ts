@@ -16,7 +16,7 @@ export const LoginBotContainer = styled.div<LoginBotProps>`
   height: 39.938rem;
   border-radius: 16px;
   align-items: flex-end;
-  z-index: 1000;
+  z-index: 1001;
   display: flex;
   transition: all 1s ease-in-out;
   flex-direction: column;
@@ -55,6 +55,19 @@ export const LoginButton = styled.button`
   width: 100%;
   margin: 0 auto;
   height: 40px;
+  outline: none;
+  border: none;
+  color: #fcfcfc;
+  font-weight: normal;
+  font-size: 18px;
+`;
+
+export const CloseButton = styled.button`
+  background-color: #55b3f3;
+  width: 60px;
+  border-radius: 50%;
+  align-self: flex-end;
+  height: 60px;
   outline: none;
   border: none;
   color: #fcfcfc;

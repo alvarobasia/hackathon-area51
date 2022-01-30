@@ -7,18 +7,22 @@ import {
   WrapperInput,
   LoginButton,
   SubtextContainter,
+  CloseButton,
 } from './styles';
 
 // import { Container } from './styles';
 
 const LoginBot: React.FC = () => {
-  const { showLoginModal } = useBotModal();
+  const { showLoginModal, handleOpenLoginModal } = useBotModal();
   const [show, setShow] = React.useState(false);
   const [isLogin, setIsLogin] = React.useState(false);
 
   return (
     <LoginBotContainer show={showLoginModal}>
-      <h2>Criar nova conta</h2>
+      <CloseButton type="button" onClick={() => handleOpenLoginModal(false)}>
+        X (F)
+      </CloseButton>
+      <h2>{isLogin ? 'Criar nova conta' : 'Bem vindo de volta!'} </h2>
       <form>
         <WrapperInput>
           <label htmlFor="email">E-mail</label>
@@ -57,7 +61,9 @@ const LoginBot: React.FC = () => {
             />
           </button>
         </WrapperInput>
-        <LoginButton> {isLogin ? 'Criar nova conta' : 'Entrar'}</LoginButton>
+        <LoginButton>
+          {isLogin ? 'Criar nova conta (R)' : 'Entrar (R)'}
+        </LoginButton>
       </form>
       <SubtextContainter>
         {isLogin ? 'Já tem uma conta?' : 'Não tem uma conta?'}

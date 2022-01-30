@@ -15,7 +15,7 @@ import { ModalTextGreetings } from './styles';
 const GreetingsModal = () => {
   const [modalState, setModalState] = useState('');
 
-  const { handleModalState } = useBotModal();
+  const { handleModalState, handleOpenLoginModal } = useBotModal();
 
   const handleModal = () => {
     setModalState('choices');
@@ -51,7 +51,7 @@ const GreetingsModal = () => {
             </button>
           </DenialButton>
           <ConfirmationButton>
-            <button type="button" onClick={handleModal}>
+            <button type="button" onClick={() => handleOpenLoginModal(true)}>
               <strong>Sim(Shift + S)</strong>
             </button>
           </ConfirmationButton>
