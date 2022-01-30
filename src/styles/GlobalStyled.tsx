@@ -37,6 +37,10 @@ const GlobalStyled = createGlobalStyle`
   body {
     background: var(--gray-300);
     color: var(--gray-900);
+
+    > iframe {
+      z-index: 1 !important;
+    }
   }
 
   button {

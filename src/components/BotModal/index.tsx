@@ -2,9 +2,10 @@ import { useMemo } from 'react';
 
 import { useBotModal } from '../../hooks/useBotModal/useBotModal';
 
-import GreetingsModal from './components/GreetingsModal';
-import ChoicesModal from './components/ChoicesModal';
-import SearchModal from './components/SearchModal';
+import GreetingsModal from './Content/GreetingsModal';
+import ChoicesModal from './Content/ChoicesModal';
+import SearchModal from './Content/SearchModal';
+import PDP from './Content/PDP';
 
 import Assistent from '../../assets/Assistent.svg';
 
@@ -18,6 +19,7 @@ const BotModal = () => {
       GreetingsModal,
       ChoicesModal,
       SearchModal,
+      PDP,
     };
   }, []);
 
@@ -26,9 +28,11 @@ const BotModal = () => {
       <ModalImageContainer>
         <img src={Assistent} alt="assistant bot" />
       </ModalImageContainer>
+
       {modalState === 'GreetingsModal' && <Modal.GreetingsModal />}
       {modalState === 'ChoicesModal' && <Modal.ChoicesModal />}
       {modalState === 'SearchModal' && <Modal.SearchModal />}
+      {modalState === 'PDP' && <Modal.PDP />}
     </ModalContainer>
   );
 };

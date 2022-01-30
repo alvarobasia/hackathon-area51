@@ -37,7 +37,7 @@ const GreetingsModal = () => {
         <strong>(SHIFT + A)</strong>
         <img src={AudioOn} alt="audio on" />
       </AudioButtonContainer>
-      <p>Olá, me chamo Henrique, sou assistente virtual da X.</p>
+      <p>Olá, me chamo Henrique, sou assistente virtual da EasyAssist.</p>
       <p>
         Irei auxiliar você em suas compras de hoje! Vi que você ainda não está
         logado em nosso sistema, você deseja logar no nosso sistema para
