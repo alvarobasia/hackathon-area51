@@ -26,7 +26,6 @@ const BotModal = () => {
       <ModalImageContainer>
         <img src={Assistent} alt="assistant bot" />
       </ModalImageContainer>
-
       {modalState === 'GreetingsModal' && <Modal.GreetingsModal />}
       {modalState === 'ChoicesModal' && <Modal.ChoicesModal />}
       {modalState === 'SearchModal' && <Modal.SearchModal />}
