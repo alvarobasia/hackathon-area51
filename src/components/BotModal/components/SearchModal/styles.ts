@@ -64,14 +64,20 @@ export const ArrowButtonContainer = styled.button`
   }
 `;
 
-export const SearchResultContainer = styled.div`
+export const SearchResultContainer = styled.ul`
   background-color: white;
   position: absolute;
-  bottom: 30px;
+  bottom: 0px;
   width: 90%;
   padding: 6px;
-  display: flex;
-  align-items: center;
+
+  li {
+    button {
+      display: flex;
+      align-items: center;
+    }
+  }
+
   img {
     width: 44px;
     height: 43px;
@@ -80,4 +86,29 @@ export const SearchResultContainer = styled.div`
   p {
     margin-bottom: 0px;
   }
+`;
+
+export const SelectedItem = styled.div`
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 44px;
+    height: 43px;
+    margin-right: 16px;
+  }
+  p {
+    margin-bottom: 0px;
+  }
+`;
+
+export const SelectedItemContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  padding: 6px;
+  margin-bottom: 24px;
 `;

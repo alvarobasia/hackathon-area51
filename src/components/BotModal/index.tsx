@@ -1,39 +1,34 @@
-import { useEffect, useState } from 'react';
-import { useBotModal } from '../../hooks/useBotModal/useBotModal';
-import GreetingsModal from './components/GreetingsModal';
-import { ModalContainer, ModalImageContainer, ModalText } from './styles';
+import { useMemo } from 'react';
 
-import Assistent from '../../assets/Assistent.svg';
+import { useBotModal } from '../../hooks/useBotModal/useBotModal';
+
+import GreetingsModal from './components/GreetingsModal';
 import ChoicesModal from './components/ChoicesModal';
 import SearchModal from './components/SearchModal';
 
+import Assistent from '../../assets/Assistent.svg';
+
+import { ModalContainer, ModalImageContainer } from './styles';
+
 const BotModal = () => {
-  const { isModalOpen, handleModalState, modalState } = useBotModal();
+  const { isModalOpen, modalState } = useBotModal();
 
-  const [indexModalState, setIndexModalState] = useState('');
-
-  useEffect(() => {
-    setIndexModalState(modalState);
-    // handleModalRender(indexModalState);
-  }, [handleModalState, modalState, indexModalState]);
-
-  // const handleModalRender = (state: string) => {
-  //   switch (state) {
-  //     case '':
-  //       return <GreetingsModal />;
-  //     case 'choices':
-  //       return <ChoicesModal />;
-  //     default:
-  //       return <h1>hello</h1>;
-  //   }
-  // };
+  const Modal = useMemo(() => {
+    return {
+      GreetingsModal,
+      ChoicesModal,
+      SearchModal,
+    };
+  }, []);
 
   return (
     <ModalContainer isModalOpen={isModalOpen}>
       <ModalImageContainer>
         <img src={Assistent} alt="assistant bot" />
       </ModalImageContainer>
-      <GreetingsModal />
+      {modalState === 'GreetingsModal' && <Modal.GreetingsModal />}
+      {modalState === 'ChoicesModal' && <Modal.ChoicesModal />}
+      {modalState === 'SearchModal' && <Modal.SearchModal />}
     </ModalContainer>
   );
 };

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback } from 'react';
 import { useSpeechSynthesis } from 'react-speech-kit';
 import { useBotModal } from '../../../../hooks/useBotModal/useBotModal';
 import {
@@ -12,19 +12,22 @@ import {
 import AudioOn from '../../../../assets/audioOn.svg';
 import MicOff from '../../../../assets/micOff.svg';
 import { ModalTextGreetings } from './styles';
+import { getToken } from '../../../../localstorage/auth';
 
 const GreetingsModal = () => {
-  const [modalState, setModalState] = useState('');
-
   const { handleModalState, handleOpenLoginModal } = useBotModal();
 
-  const handleModal = () => {
-    setModalState('choices');
-  };
+  const verifyIfUserLogged = useCallback(() => {
+    const userLogged = getToken();
 
-  useEffect(() => {
-    handleModalState(modalState);
-  }, [modalState, handleModalState]);
+    if (!userLogged) {
+      handleOpenLoginModal(true);
+
+      return;
+    }
+
+    handleModalState('ChoicesModal');
+  }, [handleModalState, handleOpenLoginModal]);
 
   const { speak } = useSpeechSynthesis();
 
@@ -53,8 +56,9 @@ const GreetingsModal = () => {
               <strong>Não(Shift + N)</strong>
             </button>
           </DenialButton>
+
           <ConfirmationButton>
-            <button type="button" onClick={() => handleOpenLoginModal(true)}>
+            <button type="button" onClick={verifyIfUserLogged}>
               <strong>Sim(Shift + S)</strong>
             </button>
           </ConfirmationButton>
