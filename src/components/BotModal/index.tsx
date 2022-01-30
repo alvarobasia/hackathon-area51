@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useBotModal } from '../../hooks/useButtonModal/useBotModal';
+import { useBotModal } from '../../hooks/useBotModal/useBotModal';
 import GreetingsModal from './components/GreetingsModal';
 import { ModalContainer, ModalImageContainer, ModalText } from './styles';
 

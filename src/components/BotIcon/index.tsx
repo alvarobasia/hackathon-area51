@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import { useBotModal } from '../../hooks/useButtonModal/useBotModal';
+import { useBotModal } from '../../hooks/useBotModal/useBotModal';
 import { BotIconButton } from './styles';
 
 import Icon from '../../assets/icon.svg';
