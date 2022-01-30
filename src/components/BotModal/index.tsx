@@ -6,6 +6,7 @@ import GreetingsModal from './Content/GreetingsModal';
 import ChoicesModal from './Content/ChoicesModal';
 import SearchModal from './Content/SearchModal';
 import PDP from './Content/PDP';
+import Help from './Content/Help';
 
 import Assistent from '../../assets/Assistent.svg';
 
@@ -20,6 +21,7 @@ const BotModal = () => {
       ChoicesModal,
       SearchModal,
       PDP,
+      Help,
     };
   }, []);
 
@@ -32,6 +34,7 @@ const BotModal = () => {
       {modalState === 'GreetingsModal' && <Modal.GreetingsModal />}
       {modalState === 'ChoicesModal' && <Modal.ChoicesModal />}
       {modalState === 'SearchModal' && <Modal.SearchModal />}
+      {modalState === 'Help' && <Modal.Help />}
       {modalState === 'PDP' && <Modal.PDP />}
     </ModalContainer>
   );

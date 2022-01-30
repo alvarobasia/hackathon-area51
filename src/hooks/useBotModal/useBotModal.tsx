@@ -1,6 +1,11 @@
 import { createContext, FC, useContext, useState } from 'react';
 
-export type IModals = 'GreetingsModal' | 'ChoicesModal' | 'SearchModal' | 'PDP';
+export type IModals =
+  | 'GreetingsModal'
+  | 'ChoicesModal'
+  | 'SearchModal'
+  | 'PDP'
+  | 'Help';
 interface ModalContextData {
   isModalOpen: boolean;
   modalState: string;

@@ -16,7 +16,11 @@ export const Container = styled.div`
     font-family: 'Mukta';
     font-size: 0.875rem;
     line-height: 135%;
-    color: #bbbbbb;
+    color: #1c1c1c;
+
+    &::placeholder {
+      color: #bbbbbb;
+    }
   }
 `;
 
@@ -58,6 +62,7 @@ export const Options = styled.div<IOptions>`
     &.active {
       background: #a4daff80;
       border-color: #a4daff;
+      color: #1c1c1c;
     }
   }
 `;
