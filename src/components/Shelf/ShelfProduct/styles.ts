@@ -12,6 +12,8 @@ export const ProductContainer = styled.div`
 
   flex: 1;
 
+  cursor: pointer;
+
   &:hover {
     box-shadow: 0px 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
   }
