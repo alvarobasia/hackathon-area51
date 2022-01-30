@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { useCallback, useState } from 'react';
 import { SkuShelfContainer, ButtonSku } from './styles';
 
 interface ISkuProps {
@@ -6,11 +6,14 @@ interface ISkuProps {
   onChange?: (sku: string) => void;
 }
 
-const SKUShelf = ({ skus, onChange }: ISkuProps) => {
+const SKUShelf: React.FC<ISkuProps> = ({ skus, onChange }: ISkuProps) => {
+  const [selectedSku, setSelectedSku] = useState<string | null>(null);
+
   const selectSku = useCallback(
     (sku: string) => {
       if (onChange) {
         onChange(sku);
+        setSelectedSku(sku);
       }
     },
     [onChange],
@@ -20,6 +23,8 @@ const SKUShelf = ({ skus, onChange }: ISkuProps) => {
     <SkuShelfContainer>
       {skus.map(sku => (
         <ButtonSku
+          isSelected={selectedSku === sku}
+          disabled={selectedSku === sku}
           onClick={e => {
             e.stopPropagation();
             selectSku(sku);

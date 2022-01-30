@@ -8,12 +8,17 @@ export const SkuShelfContainer = styled.div`
   gap: 1rem;
 `;
 
-export const ButtonSku = styled.button`
+interface ButtonSkuProps {
+  isSelected: boolean;
+}
+
+export const ButtonSku = styled.button<ButtonSkuProps>`
   width: auto;
   height: auto;
   cursor: pointer;
   font-size: 0.75rem;
-  background: var(--green-100);
+  background: ${props =>
+    props.isSelected ? 'var(--gray-600)' : 'var(--green-100)'};
   outline: none;
   border: none;
   padding: 0.3rem;
