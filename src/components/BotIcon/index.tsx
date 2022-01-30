@@ -1,11 +1,11 @@
 import { useCallback, useEffect, useState } from 'react';
-import { useButtonModal } from '../../hooks/useButtonModal/useOpenModal';
+import { useBotModal } from '../../hooks/useBotModal/useBotModal';
 import { BotIconButton } from './styles';
 
 const BotIcon = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const { checkButton } = useButtonModal();
+  const { checkButton } = useBotModal();
 
   const handleModalOpen = useCallback(() => {
     setIsOpen(!isOpen);

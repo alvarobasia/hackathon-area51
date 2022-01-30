@@ -8,6 +8,7 @@ import { Providers } from './hooks';
 import GlobalStyled from './styles/GlobalStyled';
 import BotIcon from './components/BotIcon';
 import BotModal from './components/BotModal';
+import LoginBot from './components/RegisterBot';
 
 const App: React.FC = () => {
   return (
@@ -17,7 +18,7 @@ const App: React.FC = () => {
       <div className="App">
         <Routes />
       </div>
-
+      <LoginBot />
       <BotIcon />
       <BotModal />
       <ToastContainer />

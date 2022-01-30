@@ -1,4 +1,4 @@
-import { useButtonModal } from '../../hooks/useButtonModal/useOpenModal';
+import { useBotModal } from '../../hooks/useBotModal/useBotModal';
 import {
   AudioButtonContainer,
   ConfirmationButton,
@@ -11,7 +11,7 @@ import {
 } from './styles';
 
 const BotModal = () => {
-  const { isModalOpen } = useButtonModal();
+  const { isModalOpen, handleOpenLoginModal } = useBotModal();
 
   return (
     <ModalContainer isModalOpen={isModalOpen}>
@@ -43,7 +43,7 @@ const BotModal = () => {
               </button>
             </DenialButton>
             <ConfirmationButton>
-              <button type="button">
+              <button type="button" onClick={handleOpenLoginModal}>
                 <strong>Sim(Shift + S)</strong>
               </button>
             </ConfirmationButton>
