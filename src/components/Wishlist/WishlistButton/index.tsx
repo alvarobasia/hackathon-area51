@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import { FiHeart } from 'react-icons/fi';
+import { toast } from 'react-toastify';
 import { useWishlist } from '../../../hooks/useWishlist';
 
 import axiosAPI from '../../../services/axiosAPI';
