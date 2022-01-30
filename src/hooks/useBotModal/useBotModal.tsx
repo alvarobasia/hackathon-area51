@@ -1,12 +1,13 @@
 import { createContext, FC, useContext, useState } from 'react';
 
+export type IModals = 'GreetingsModal' | 'ChoicesModal' | 'SearchModal';
 interface ModalContextData {
   isModalOpen: boolean;
   modalState: string;
   checkButton: (value: boolean) => void;
   handleOpenLoginModal: (value: boolean) => void;
   showLoginModal: boolean;
-  handleModalState: (value: string) => void;
+  handleModalState: (value: IModals) => void;
 }
 
 const ModalContext = createContext<ModalContextData>({} as ModalContextData);
@@ -14,13 +15,13 @@ const ModalContext = createContext<ModalContextData>({} as ModalContextData);
 const ModalProvider: FC = ({ children }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [showLoginModal, setShowLoginModal] = useState(false);
-  const [modalState, setModalState] = useState('');
+  const [modalState, setModalState] = useState<IModals>('GreetingsModal');
 
   const checkButton = (value: boolean) => {
     setIsModalOpen(value);
   };
 
-  const handleModalState = (value: string) => {
+  const handleModalState = (value: IModals) => {
     setModalState(value);
   };
 

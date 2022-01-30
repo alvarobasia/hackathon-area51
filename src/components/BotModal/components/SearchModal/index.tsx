@@ -27,7 +27,7 @@ const SearchModal = () => {
   };
 
   useEffect(() => {
-    handleModalState(modalState);
+    // handleModalState(modalState);
   }, [modalState, handleModalState]);
 
   return (
