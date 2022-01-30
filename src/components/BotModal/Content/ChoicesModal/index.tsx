@@ -16,7 +16,7 @@ const ChoicesModal = () => {
   const { handleModalState } = useBotModal();
 
   const handleModal = () => {
-    handleModalState('SearchModal');
+    handleModalState('Help');
   };
 
   return (
