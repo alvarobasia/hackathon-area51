@@ -83,8 +83,6 @@ const CartProvider: FC = ({ children }) => {
             ...response.data,
             amount: 1,
           };
-
-          console.log(item);
           setCart([...cart, item]);
         } else {
           const item = {
@@ -92,7 +90,6 @@ const CartProvider: FC = ({ children }) => {
             amount: 1,
             sku: _product_sku,
           };
-          console.log(item);
           setCart([...cart, item]);
         }
 
