@@ -46,11 +46,22 @@ export const ChoicesList = styled.ul`
     & + li {
       margin-top: 16px;
     }
+
+    div {
+      display: flex;
+      align-items: center;
+    }
   }
 
   input {
     margin-right: 16px;
     width: 24px;
     height: 24px;
+
+    &:checked {
+      background-color: #bae4b8;
+      color: green;
+      border: 1px solid green;
+    }
   }
 `;
