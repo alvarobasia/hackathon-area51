@@ -5,6 +5,7 @@ import { useHistory } from 'react-router-dom';
 import { useCart } from '../../../hooks/useCart';
 
 import Price from '../../../utils/Price';
+import SKUShelf from '../../SKUShelf';
 
 import WishlistButton from '../../Wishlist/WishlistButton';
 
@@ -22,6 +23,9 @@ import { ShelfProductFunctionType } from './types/ShelfProductFunctionType';
 const ShelfProduct: ShelfProductFunctionType = ({ productProps }) => {
   const [productAdded, setProductAdded] = useState(false);
   const history = useHistory();
+
+  const [skuSelected, setSkuSelected] = useState('');
+
   const { addProduct } = useCart();
 
   const priceWithInstallment = useMemo(() => {
@@ -34,12 +38,12 @@ const ShelfProduct: ShelfProductFunctionType = ({ productProps }) => {
   const handleAddToCart = useCallback(() => {
     setProductAdded(true);
 
-    addProduct(productProps.id);
+    addProduct(productProps.id, skuSelected);
 
     setTimeout(() => {
       setProductAdded(false);
     }, 3000);
-  }, [addProduct, productProps.id]);
+  }, [addProduct, productProps.id, skuSelected]);
 
   return (
     <ProductContainer
@@ -56,6 +60,15 @@ const ShelfProduct: ShelfProductFunctionType = ({ productProps }) => {
       </ProductImage>
 
       <ProductDescription>{productProps.description}</ProductDescription>
+
+      <>
+        {productProps.skus && (
+          <SKUShelf
+            skus={productProps.skus}
+            onChange={e => setSkuSelected(e)}
+          />
+        )}
+      </>
 
       <ProductPrice>
         {productProps.selling_price < productProps.price && (

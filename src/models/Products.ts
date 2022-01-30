@@ -6,4 +6,5 @@ export interface Products {
   installment_rate: number;
   description: string;
   image_url: string;
+  skus?: string[];
 }
