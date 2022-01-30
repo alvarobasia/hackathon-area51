@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { SkuShelfContainer } from './styles';
+import { SkuShelfContainer, ButtonSku } from './styles';
 
 interface ISkuProps {
   skus: string[];
@@ -19,9 +19,15 @@ const SKUShelf = ({ skus, onChange }: ISkuProps) => {
   return (
     <SkuShelfContainer>
       {skus.map(sku => (
-        <button onClick={() => selectSku(sku)} type="button">
+        <ButtonSku
+          onClick={e => {
+            e.stopPropagation();
+            selectSku(sku);
+          }}
+          type="button"
+        >
           {sku}
-        </button>
+        </ButtonSku>
       ))}
     </SkuShelfContainer>
   );

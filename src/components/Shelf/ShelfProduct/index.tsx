@@ -16,6 +16,7 @@ import {
   ProductDescription,
   ProductImage,
   ProductPrice,
+  SkuContainer,
 } from './styles';
 
 import { ShelfProductFunctionType } from './types/ShelfProductFunctionType';
@@ -47,7 +48,7 @@ const ShelfProduct: ShelfProductFunctionType = ({ productProps }) => {
 
   return (
     <ProductContainer
-      onClick={() => history.push(`/products/${productProps.id}`)}
+      onClick={() => history.push(`/product/${productProps.id}`)}
     >
       <ProductImage>
         <img
@@ -61,14 +62,14 @@ const ShelfProduct: ShelfProductFunctionType = ({ productProps }) => {
 
       <ProductDescription>{productProps.description}</ProductDescription>
 
-      <>
+      <SkuContainer>
         {productProps.skus && (
           <SKUShelf
             skus={productProps.skus}
             onChange={e => setSkuSelected(e)}
           />
         )}
-      </>
+      </SkuContainer>
 
       <ProductPrice>
         {productProps.selling_price < productProps.price && (
@@ -105,7 +106,14 @@ const ShelfProduct: ShelfProductFunctionType = ({ productProps }) => {
           adicionado
         </ProductButtonAdded>
       ) : (
-        <ProductButton onClick={handleAddToCart}>Adicionar</ProductButton>
+        <ProductButton
+          onClick={e => {
+            e.stopPropagation();
+            handleAddToCart();
+          }}
+        >
+          Adicionar
+        </ProductButton>
       )}
     </ProductContainer>
   );

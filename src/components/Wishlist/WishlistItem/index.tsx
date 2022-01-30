@@ -66,7 +66,12 @@ const WishlistItem: WishlistItemFunctionType = ({ productProps }) => {
           adicionado
         </WishlistItemButtonAdded>
       ) : (
-        <WishlistItemButton onClick={handleAddToCart}>
+        <WishlistItemButton
+          onClick={e => {
+            e.stopPropagation();
+            handleAddToCart();
+          }}
+        >
           Adicionar
         </WishlistItemButton>
       )}

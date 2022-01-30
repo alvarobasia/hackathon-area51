@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import Header from '../../components/Header';
 import Shelf from '../../components/Shelf';
@@ -15,18 +16,21 @@ import {
   BuyButton,
 } from './styles';
 
-const Product: React.FC = () => {
+const Product: React.FC = (props: any) => {
   const [product, setProduct] = useState<Products | null>(null);
+  const { pathname } = useLocation();
 
   useEffect(() => {
     axiosAPI
-      .get(`/products/${1}`)
+      .get(`/products/${pathname.split('/')[2]}`)
       .then(response => {
         const { data } = response;
 
         setProduct(data);
       })
-      .catch(() => console.error(`cannot load collection ${1}`));
+      .catch(() =>
+        console.error(`cannot load collection ${pathname.split('/')[2]}`),
+      );
   }, []);
 
   const priceWithInstallment = useMemo(() => {
