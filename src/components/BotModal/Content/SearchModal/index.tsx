@@ -23,6 +23,7 @@ import axiosAPI from '../../../../services/axiosAPI';
 import { Products } from '../../../../models/Products';
 
 const SearchModal = () => {
+  const { handleModalState } = useBotModal();
   const [searchInput, setSearchInput] = useState('');
   const [searchResults, setsearchResults] = useState<Products[]>([]);
   const [selectedItem, setSelectedItem] = useState<Products>();
@@ -48,6 +49,10 @@ const SearchModal = () => {
 
   const handleItemSelection = (element: Products) => {
     setSelectedItem(element);
+  };
+
+  const handleModal = () => {
+    handleModalState('PDP');
   };
 
   return (
@@ -123,7 +128,7 @@ const SearchModal = () => {
           <strong>(SHIFT + M)</strong>
         </div>
         <ConfirmationButton>
-          <button type="button">
+          <button type="button" onClick={handleModal}>
             <strong>Detalhes(Shift + C)</strong>
           </button>
         </ConfirmationButton>
