@@ -1,55 +1,39 @@
-import { useButtonModal } from '../../hooks/useButtonModal/useOpenModal';
-import {
-  AudioButtonContainer,
-  ConfirmationButton,
-  ConfirmationContainer,
-  DenialButton,
-  ModalButtonsContainer,
-  ModalContainer,
-  ModalImageContainer,
-  ModalText,
-} from './styles';
+import { useEffect, useState } from 'react';
+import { useBotModal } from '../../hooks/useBotModal/useBotModal';
+import GreetingsModal from './components/GreetingsModal';
+import { ModalContainer, ModalImageContainer, ModalText } from './styles';
+
+import Assistent from '../../assets/Assistent.svg';
+import ChoicesModal from './components/ChoicesModal';
+import SearchModal from './components/SearchModal';
 
 const BotModal = () => {
-  const { isModalOpen } = useButtonModal();
+  const { isModalOpen, handleModalState, modalState } = useBotModal();
+
+  const [indexModalState, setIndexModalState] = useState('');
+
+  useEffect(() => {
+    setIndexModalState(modalState);
+    // handleModalRender(indexModalState);
+  }, [handleModalState, modalState, indexModalState]);
+
+  // const handleModalRender = (state: string) => {
+  //   switch (state) {
+  //     case '':
+  //       return <GreetingsModal />;
+  //     case 'choices':
+  //       return <ChoicesModal />;
+  //     default:
+  //       return <h1>hello</h1>;
+  //   }
+  // };
 
   return (
     <ModalContainer isModalOpen={isModalOpen}>
       <ModalImageContainer>
-        <img src="Assistent.png" alt="assistant bot" />
+        <img src={Assistent} alt="assistant bot" />
       </ModalImageContainer>
-      <ModalText>
-        <AudioButtonContainer>
-          <strong>(SHIFT + A)</strong>
-          <img src="audioOn.png" alt="audio on" />
-        </AudioButtonContainer>
-        <p>Olá, me chamo Henrique, sou assistente virtual da X.</p>
-        <p>
-          Irei auxiliar você em suas compras de hoje! Vi que você ainda não está
-          logado em nosso sistema, você deseja logar no nosso sistema para
-          conseguir utilizar as informações salvas?
-        </p>
-        <ModalButtonsContainer>
-          <div>
-            <button type="button">
-              <img src="micOff.png" alt="mic off" />
-            </button>
-            <strong>(SHIFT + M)</strong>
-          </div>
-          <ConfirmationContainer>
-            <DenialButton>
-              <button type="button">
-                <strong>Não(Shift + N)</strong>
-              </button>
-            </DenialButton>
-            <ConfirmationButton>
-              <button type="button">
-                <strong>Sim(Shift + S)</strong>
-              </button>
-            </ConfirmationButton>
-          </ConfirmationContainer>
-        </ModalButtonsContainer>
-      </ModalText>
+      <SearchModal />
     </ModalContainer>
   );
 };
