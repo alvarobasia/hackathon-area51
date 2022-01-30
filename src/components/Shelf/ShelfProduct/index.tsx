@@ -1,5 +1,6 @@
 import { useCallback, useMemo, useState } from 'react';
 import { FiCheck } from 'react-icons/fi';
+import { useHistory } from 'react-router-dom';
 
 import { useCart } from '../../../hooks/useCart';
 
@@ -20,7 +21,7 @@ import { ShelfProductFunctionType } from './types/ShelfProductFunctionType';
 
 const ShelfProduct: ShelfProductFunctionType = ({ productProps }) => {
   const [productAdded, setProductAdded] = useState(false);
-
+  const history = useHistory();
   const { addProduct } = useCart();
 
   const priceWithInstallment = useMemo(() => {
@@ -41,7 +42,9 @@ const ShelfProduct: ShelfProductFunctionType = ({ productProps }) => {
   }, [addProduct, productProps.id]);
 
   return (
-    <ProductContainer>
+    <ProductContainer
+      onClick={() => history.push(`/products/${productProps.id}`)}
+    >
       <ProductImage>
         <img
           src={productProps.image_url}
