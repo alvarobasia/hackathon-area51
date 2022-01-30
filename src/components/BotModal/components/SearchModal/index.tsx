@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useBotModal } from '../../../../hooks/useBotModal/useBotModal';
-import { AudioButtonContainer, ModalButtonsContainer } from '../../styles';
+import {
+  AudioButtonContainer,
+  ConfirmationButton,
+  ModalButtonsContainer,
+} from '../../styles';
 
 import AudioOn from '../../../../assets/audioOn.svg';
 import BackArrow from '../../../../assets/BackArrow.svg';
@@ -57,6 +61,11 @@ const SearchModal = () => {
           </button>
           <strong>(SHIFT + M)</strong>
         </div>
+        <ConfirmationButton>
+          <button type="button" onClick={handleModal}>
+            <strong>Detalhes(Shift + C)</strong>
+          </button>
+        </ConfirmationButton>
       </ModalButtonsContainer>
     </ModalTextSearch>
   );
