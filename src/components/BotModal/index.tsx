@@ -33,7 +33,7 @@ const BotModal = () => {
       <ModalImageContainer>
         <img src={Assistent} alt="assistant bot" />
       </ModalImageContainer>
-      <SearchModal />
+      <GreetingsModal />
     </ModalContainer>
   );
 };

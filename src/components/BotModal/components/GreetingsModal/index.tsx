@@ -31,7 +31,7 @@ const GreetingsModal = () => {
   return (
     <ModalTextGreetings>
       <AudioButtonContainer>
-        <strong>(SHIFT + A)</strong>
+        <p>(SHIFT + A)</p>
         <img src={AudioOn} alt="audio on" />
       </AudioButtonContainer>
       <p>Olá, me chamo Henrique, sou assistente virtual da X.</p>
@@ -45,17 +45,15 @@ const GreetingsModal = () => {
           <button type="button">
             <img src={MicOff} alt="mic off" />
           </button>
-          <strong>(SHIFT + M)</strong>
+          <p>(SHIFT + M)</p>
         </div>
         <ConfirmationContainer>
           <DenialButton>
-            <button type="button">
-              <strong>Não(Shift + N)</strong>
-            </button>
+            <button type="button">Não(Shift + N)</button>
           </DenialButton>
           <ConfirmationButton>
             <button type="button" onClick={() => handleOpenLoginModal(true)}>
-              <strong>Sim(Shift + S)</strong>
+              Sim(Shift + S)
             </button>
           </ConfirmationButton>
         </ConfirmationContainer>

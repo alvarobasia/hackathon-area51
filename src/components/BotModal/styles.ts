@@ -69,8 +69,9 @@ export const AudioButtonContainer = styled.button`
   display: flex;
   align-items: center;
 
-  strong {
+  p {
     margin-right: 11px;
+    color: black;
   }
 `;
 
@@ -98,8 +99,10 @@ export const DenialButton = styled.div`
   padding: 0px 16px;
   margin-right: 8px;
 
-  strong {
+  button {
     color: #ff2e63;
+    font-size: 16px;
+    font-weight: 600;
   }
 `;
 
@@ -109,7 +112,9 @@ export const ConfirmationButton = styled.div`
   padding: 0px 16px;
   margin-left: 8px;
 
-  strong {
+  button {
     color: #55b3f3;
+    font-size: 16px;
+    font-weight: 600;
   }
 `;

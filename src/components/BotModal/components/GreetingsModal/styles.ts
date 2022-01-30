@@ -29,4 +29,10 @@ export const ModalTextGreetings = styled.div`
     bottom: -17px;
     transform: rotate(20deg);
   }
+
+  p {
+    font-size: 18px;
+    color: #7d7d7d;
+    line-height: 27px;
+  }
 `;

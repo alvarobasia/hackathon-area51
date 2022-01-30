@@ -4,7 +4,7 @@ export const ModalTextSearch = styled.div`
   display: flex;
   flex-direction: column;
   width: 627px;
-  height: 280px;
+  height: 285px;
   background-color: white;
   margin-bottom: 212px;
   padding: 24px 32px;
@@ -31,7 +31,9 @@ export const ModalTextSearch = styled.div`
   }
 
   p {
-    margin-bottom: 32px;
+    margin: 20px 0;
+    font-size: 18px;
+    color: #7d7d7d;
   }
 
   form {
@@ -48,6 +50,14 @@ export const ModalTextSearch = styled.div`
   }
 `;
 
+export const SearchContainer = styled.div`
+  p {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #7d7d7d;
+  }
+`;
+
 export const TopButtonsContainer = styled.div`
   display: flex;
   align-items: center;
@@ -58,6 +68,7 @@ export const ArrowButtonContainer = styled.button`
   align-self: flex-start;
   display: flex;
   align-items: center;
+  paddin-left: 0px;
 
   strong {
     margin-left: 16px;
@@ -75,16 +86,16 @@ export const SearchResultContainer = styled.ul`
     button {
       display: flex;
       align-items: center;
-    }
-  }
 
-  img {
-    width: 44px;
-    height: 43px;
-    margin-right: 16px;
-  }
-  p {
-    margin-bottom: 0px;
+      p {
+        margin-top: 0px !important;
+      }
+      img {
+        width: 44px;
+        height: 43px;
+        margin-right: 16px;
+      }
+    }
   }
 `;
 
@@ -98,7 +109,8 @@ export const SelectedItem = styled.div`
     margin-right: 16px;
   }
   p {
-    margin-bottom: 0px;
+    margin: 0px;
+    font-size: 14px;
   }
 `;
 

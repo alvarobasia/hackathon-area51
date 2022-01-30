@@ -12,6 +12,7 @@ import MicOff from '../../../../assets/micOff.svg';
 import {
   ArrowButtonContainer,
   ModalTextSearch,
+  SearchContainer,
   SearchResultContainer,
   SelectedItem,
   SelectedItemContainer,
@@ -63,7 +64,7 @@ const SearchModal = () => {
         </AudioButtonContainer>
       </TopButtonsContainer>
       {!selectedItem ? (
-        <>
+        <SearchContainer>
           <p>Informe o produto que você deseja comprar</p>
           <form>
             <input
@@ -94,7 +95,7 @@ const SearchModal = () => {
                 </li>
               ))}
           </SearchResultContainer>
-        </>
+        </SearchContainer>
       ) : (
         <>
           <p>
@@ -123,9 +124,7 @@ const SearchModal = () => {
           <strong>(SHIFT + M)</strong>
         </div>
         <ConfirmationButton>
-          <button type="button">
-            <strong>Detalhes(Shift + C)</strong>
-          </button>
+          <button type="button">Detalhes(Shift + C)</button>
         </ConfirmationButton>
       </ModalButtonsContainer>
     </ModalTextSearch>
