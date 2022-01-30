@@ -13,6 +13,8 @@ import {
   ArrowButtonContainer,
   ModalTextSearch,
   SearchResultContainer,
+  SelectedItem,
+  SelectedItemContainer,
   TopButtonsContainer,
 } from './styles';
 
@@ -23,6 +25,7 @@ import { Products } from '../../../../models/Products';
 const SearchModal = () => {
   const [searchInput, setSearchInput] = useState('');
   const [searchResults, setsearchResults] = useState<Products[]>([]);
+  const [selectedItem, setSelectedItem] = useState<Products>();
 
   const handleModalSearch = async (e: any, input: string) => {
     e.preventDefault();
@@ -43,15 +46,9 @@ const SearchModal = () => {
     }
   };
 
-  const multiSearchOr = (text: any, searchWords: any) => {
-    const regex = searchWords
-      .map((word: any) => `(?=.*\\b${word}\\b)`)
-      .join('');
-    const searchExp = new RegExp(regex, 'gi');
-    return !!searchExp.test(text);
+  const handleItemSelection = (element: Products) => {
+    setSelectedItem(element);
   };
-
-  console.log(searchResults);
 
   return (
     <ModalTextSearch>
@@ -65,26 +62,59 @@ const SearchModal = () => {
           <img src={AudioOn} alt="audio on" />
         </AudioButtonContainer>
       </TopButtonsContainer>
-      <p>Informe o produto que você deseja comprar</p>
-      <form>
-        <input
-          type="text"
-          name="search product"
-          id="search"
-          placeholder="Qual produto você procura? (SHIFT + D)"
-          onChange={e => setSearchInput(e.target.value)}
-        />
-        <button type="submit" onClick={e => handleModalSearch(e, searchInput)}>
-          <img src={SearchButton} alt="search button" />
-        </button>
-      </form>
-      {searchResults.length > 0 &&
-        searchResults.map(element => (
+      {!selectedItem ? (
+        <>
+          <p>Informe o produto que você deseja comprar</p>
+          <form>
+            <input
+              type="text"
+              name="search product"
+              id="search"
+              placeholder="Qual produto você procura? (SHIFT + D)"
+              onChange={e => setSearchInput(e.target.value)}
+            />
+            <button
+              type="submit"
+              onClick={e => handleModalSearch(e, searchInput)}
+            >
+              <img src={SearchButton} alt="search button" />
+            </button>
+          </form>
           <SearchResultContainer>
-            <img src={element.image_url} alt="" />
-            <p>{element.description}</p>
+            {searchResults.length > 0 &&
+              searchResults.map(element => (
+                <li>
+                  <button
+                    onClick={() => handleItemSelection(element)}
+                    type="button"
+                  >
+                    <img src={element.image_url} alt="" />
+                    <p>{element.description}</p>
+                  </button>
+                </li>
+              ))}
           </SearchResultContainer>
-        ))}
+        </>
+      ) : (
+        <>
+          <p>
+            Você selecionou {selectedItem.description}, você deseja verificar os
+            detalhes do produto ou comprar agora mesmo?
+          </p>
+          <SelectedItemContainer>
+            <SelectedItem>
+              <img src={selectedItem.image_url} alt="" />
+              <p>{selectedItem.description}</p>
+            </SelectedItem>
+            <button
+              type="submit"
+              onClick={e => handleModalSearch(e, searchInput)}
+            >
+              <img src={SearchButton} alt="search button" />
+            </button>
+          </SelectedItemContainer>
+        </>
+      )}
       <ModalButtonsContainer>
         <div>
           <button type="button">
