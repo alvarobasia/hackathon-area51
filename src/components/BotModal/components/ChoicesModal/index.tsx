@@ -13,17 +13,11 @@ import MicOff from '../../../../assets/micOff.svg';
 import { ChoicesContainer, ChoicesList, ModalTextChoices } from './styles';
 
 const ChoicesModal = () => {
-  const [modalState, setModalState] = useState('');
-
   const { handleModalState } = useBotModal();
 
   const handleModal = () => {
-    setModalState('choices');
+    handleModalState('SearchModal');
   };
-
-  useEffect(() => {
-    handleModalState(modalState);
-  }, [modalState, handleModalState]);
 
   return (
     <ModalTextChoices>

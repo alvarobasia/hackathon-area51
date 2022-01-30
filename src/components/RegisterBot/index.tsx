@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import Line from '../../assets/Line-Marker.svg';
 import Eye from '../../assets/eye.svg';
 import { useBotModal } from '../../hooks/useBotModal/useBotModal';
@@ -10,12 +10,24 @@ import {
   CloseButton,
 } from './styles';
 
+import { setToken } from '../../localstorage/auth';
+
 // import { Container } from './styles';
 
 const LoginBot: React.FC = () => {
-  const { showLoginModal, handleOpenLoginModal } = useBotModal();
+  const { showLoginModal, handleOpenLoginModal, handleModalState } =
+    useBotModal();
   const [show, setShow] = React.useState(false);
   const [isLogin, setIsLogin] = React.useState(false);
+
+  const handleSubmit = useCallback(
+    e => {
+      e.preventDefault();
+
+      handleModalState('ChoicesModal');
+    },
+    [handleModalState],
+  );
 
   return (
     <LoginBotContainer show={showLoginModal}>
@@ -23,7 +35,7 @@ const LoginBot: React.FC = () => {
         X (F)
       </CloseButton>
       <h2>{isLogin ? 'Criar nova conta' : 'Bem vindo de volta!'} </h2>
-      <form>
+      <form onSubmit={handleSubmit}>
         <WrapperInput>
           <label htmlFor="email">E-mail</label>
           <input type="email" id="email" />
@@ -61,7 +73,7 @@ const LoginBot: React.FC = () => {
             />
           </button>
         </WrapperInput>
-        <LoginButton>
+        <LoginButton onClick={() => setToken('sdjalkgbfsdalz/knavlkajszçfalb')}>
           {isLogin ? 'Criar nova conta (R)' : 'Entrar (R)'}
         </LoginButton>
       </form>
