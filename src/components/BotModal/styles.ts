@@ -97,9 +97,11 @@ export const DenialButton = styled.div`
   border-radius: 4px;
   padding: 0px 16px;
   margin-right: 8px;
-
-  strong {
-    color: #ff2e63;
+  button {
+    strong {
+      color: #ff2e63;
+      font-weight: bold;
+    }
   }
 `;
 
@@ -108,8 +110,10 @@ export const ConfirmationButton = styled.div`
   border-radius: 4px;
   padding: 0px 16px;
   margin-left: 8px;
-
-  strong {
-    color: #55b3f3;
+  button {
+    strong {
+      color: #55b3f3;
+      font-weight: bold;
+    }
   }
 `;

@@ -11,11 +11,17 @@ export const ModalTextGreetings = styled.div`
   border-radius: 25px;
   justify-content: space-between;
   position: relative;
-
+  font-family: 'Mukta', sans-serif;
+  color: #7d7d7d;
+  font-size: 18px;
   button {
     background: none;
   }
-
+  strong {
+    color: #000;
+    font-size: 16px;
+    font-weight: normal;
+  }
   &:before {
     content: '';
     width: 0px;
