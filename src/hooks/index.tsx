@@ -1,8 +1,8 @@
 import { FC } from 'react';
+import { ModalProvider } from './useButtonModal/useBotModal';
 
 import { CartProvider } from './useCart';
 import { WishlistProvider } from './useWishlist';
-import { ModalProvider } from './useButtonModal/useOpenModal';
 
 const Providers: FC = ({ children }) => {
   return (

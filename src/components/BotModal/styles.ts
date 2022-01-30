@@ -95,7 +95,7 @@ export const ConfirmationContainer = styled.div`
 export const DenialButton = styled.div`
   border: 1px solid #ff2e63;
   border-radius: 4px;
-  padding: 7px 28px;
+  padding: 0px 16px;
   margin-right: 8px;
 
   strong {
@@ -106,7 +106,7 @@ export const DenialButton = styled.div`
 export const ConfirmationButton = styled.div`
   border: 1px solid #55b3f3;
   border-radius: 4px;
-  padding: 7px 28px;
+  padding: 0px 16px;
   margin-left: 8px;
 
   strong {
