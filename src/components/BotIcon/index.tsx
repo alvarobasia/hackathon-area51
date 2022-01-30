@@ -2,6 +2,8 @@ import { useCallback, useEffect, useState } from 'react';
 import { useBotModal } from '../../hooks/useBotModal/useBotModal';
 import { BotIconButton } from './styles';
 
+import Icon from '../../assets/icon.svg';
+
 const BotIcon = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -18,7 +20,7 @@ const BotIcon = () => {
   return (
     <BotIconButton>
       <button type="button" onClick={handleModalOpen}>
-        <img src="icon.png" alt="bot icon" />
+        <img src={Icon} alt="bot icon" />
       </button>
     </BotIconButton>
   );
