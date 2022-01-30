@@ -11,7 +11,7 @@ export const ModalContainer = styled.div<IModalContainerProps>`
   width: 100%;
   height: 100%;
   align-items: flex-end;
-  z-index: 2;
+  z-index: 1000;
   display: none;
 
   ${({ isModalOpen }) =>
