@@ -63,3 +63,21 @@ export const ArrowButtonContainer = styled.button`
     margin-left: 16px;
   }
 `;
+
+export const SearchResultContainer = styled.div`
+  background-color: white;
+  position: absolute;
+  bottom: 30px;
+  width: 90%;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  img {
+    width: 44px;
+    height: 43px;
+    margin-right: 16px;
+  }
+  p {
+    margin-bottom: 0px;
+  }
+`;

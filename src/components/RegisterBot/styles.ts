@@ -9,7 +9,7 @@ export const LoginBotContainer = styled.div<LoginBotProps>`
   left: 0;
   margin: auto;
   right: 0;
-  top: ${({ show }) => (show ? '0' : '-200%')};
+  top: ${({ show }) => (show ? '0' : '-3000px')};
   bottom: 0;
   background: #f5f5f5;
   width: 34rem;
