@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useBotModal } from '../../../../hooks/useButtonModal/useBotModal';
+import { useBotModal } from '../../../../hooks/useBotModal/useBotModal';
 import {
   AudioButtonContainer,
   ModalButtonsContainer,
